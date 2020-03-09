@@ -7,10 +7,10 @@ keyStoreProps.load(new FileInputStream(keyStoreProp))
 android {
     signingConfigs {
         config {
-            keyAlias keyStoreProps["keyAlias"]
-            keyPassword keyStoreProps["keyPassword"]
-            storeFile file(keyStoreProps["storeFile"])
-            storePassword keyStoreProps["storePassword"]
+            keyAlias keyStoreProps['keyAlias']
+            keyPassword keyStoreProps['keyPassword']
+            storeFile file(keyStoreProps['storeFile'])
+            storePassword keyStoreProps['storePassword']
         }
     }
     compileSdkVersion 28
