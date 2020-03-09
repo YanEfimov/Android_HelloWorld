@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 
-def keyStoreProp = rootProject.file("keystore.properties")
+def keyStoreProp = file("keystore.properties")
 def keyStoreProps = new Properties()
 keyStoreProps.load(new FileInputStream(keyStoreProp))
 
@@ -28,6 +28,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.config
         }
+    }
+    productFlavors {
     }
 }
 
